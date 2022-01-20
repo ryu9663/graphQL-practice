@@ -1,9 +1,7 @@
-type Nicolas {
+type Hero {
   name: String!
-  age: Int!
-  gender: String!
 }
 
 type Query {
-  person: Nicolas!
+  hero: Hero!
 }
