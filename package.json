@@ -1,0 +1,28 @@
+{
+  "name": "graphql-practice",
+  "version": "1.0.0",
+  "description": "graphQL이용하여 무비앱만들기-니콜라스 클론코딩 무료강의",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryu9663/graphQL-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryu9663/graphQL-practice/issues"
+  },
+  "homepage": "https://github.com/ryu9663/graphQL-practice#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-node": "^0.0.1-security",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "graphql-yoga": "^1.18.3",
+    "nodemon": "^2.0.15"
+  }
+}
