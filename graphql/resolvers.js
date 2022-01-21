@@ -1,9 +1,9 @@
-const hero = {
-  name: "R2-D2",
-};
+import { getById, people } from "../db/db";
+
 const resolvers = {
   Query: {
-    hero: () => hero,
+    people: () => people,
+    person: (_, { id }) => getById(id),
   },
 };
 

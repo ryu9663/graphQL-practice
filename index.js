@@ -1,11 +1,13 @@
 import { GraphQLServer } from "graphql-yoga";
+import { getById, movies, getMovies, addMovie } from "./db/db";
 
-const hero = {
-  name: "R2-D2",
-};
 const resolvers = {
   Query: {
-    hero: () => hero,
+    movies: () => getMovies(),
+    movie: (_, { id }) => getById(id),
+  },
+  Mutation: {
+    addMovie: (_, { name, score }) => addMovie(name, score),
   },
 };
 
@@ -17,3 +19,5 @@ const server = new GraphQLServer({
 });
 
 server.start(() => console.log("GraphQL Server Running"));
+
+//mutation에서 id는 필요없는듯? 자동생성된대?..
